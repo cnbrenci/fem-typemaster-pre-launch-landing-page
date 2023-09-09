@@ -1,0 +1,92 @@
+/*
+1. Open up a template file alongside project so we can paste as we go
+2. Bring all the styles from the style guide from figma into variables in css
+
+*/
+
+html {
+    font-family: 'Barlow', sans-serif;
+
+    /* design color scheme variables */
+    --tangerine: #f16718;
+    --coral: #ff9b62;
+    --navy: #162542;
+    --stone: #7b8bad;
+    --cloud: #e8eff2;
+    --white: #fff;     
+}
+
+/* typography */
+
+h1,h2,h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--navy); 
+}
+
+h1 {
+    font-size: 5.6rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--stone); 
+}
+
+/* buttons */
+
+button {
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    cursor: pointer;
+    min-height: 4.8rem;
+    transition: all 250ms;
+    /* padding: 16px 26px; <- desktop*/
+    padding: 11px 14px;
+
+    /* default button */
+    background-color: var(--tangerine);
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    transform: translateY(-1px);
+    background-color: var(--coral);
+}
+
+button:active {
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+    background-color: var(--tangerine);
+}
+
+button.btn-2 {
+    background-color: var(--cloud);
+    color: var(--navy);
+}
+
+button.btn-2:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+button.btn-2:active {
+    background-color: var(--cloud);
+    color: var(--navy);
+}
