@@ -45,6 +45,30 @@ body {
     color: var(--stone); 
 }
 
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* yell */
+.yell {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 40px;
+}
+
+.icon {
+    height: 65px;
+    width: 65px;
+    background-color: var(--tangerine);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* buttons */
 
 button {
